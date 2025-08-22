@@ -4,7 +4,7 @@ import { Outlet } from "react-router";
 import Footer from '../pages/shared/Footer';
 const RootLayouts = () => {
     return (
-        <div>
+        <div className=''>
             <Navbar/>
             <Outlet/>
             <Footer/>
