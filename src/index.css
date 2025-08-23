@@ -16,6 +16,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
   .btn-box-hover:hover {
     box-shadow: 
@@ -56,3 +57,7 @@
   }
 }
 
+
+#html{
+   scroll-behavior: smooth;
+}

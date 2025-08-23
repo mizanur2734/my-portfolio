@@ -7,21 +7,20 @@ import "aos/dist/aos.css";
 
 const Banner = () => {
     useEffect(() => {
-    Aos.init({ duration: 1000, easing: "ease-in-out" });
-     once: true;  
-  }, []);
+        Aos.init({ duration: 1000, easing: "ease-in-out" });
+        once: true;
+    }, []);
     return (
-        <div className="roboto-serif-font flex flex-col-reverse md:flex-row items-center gap-10 md:gap-55
-         py-12 md:py-24 md:px-2">
-
+        <div className="roboto-serif-font min-h-screen flex flex-col-reverse md:flex-row items-center gap-10 md:gap-55
+           py-12 md:py-24">
             {/* Text Section */}
-            <div data-aos="fade-down-right" className="text-center md:text-left max-w-lg">
+            <div data-aos="fade-down-right" className="text-center md:text-left max-w-lg mt-10 md:my-25">
                 <h3 data-aos="flip-up" className="text-[20px] font-medium text-white mb-2">
                     Hello, It's Me
                 </h3>
 
                 <h1 data-aos="fade-right" className="text-3xl md:text-[52px] font-bold text-white mb-2">
-                    Mizanur Malita
+                    Mizanur Malita 
                 </h1>
 
                 <h3 data-aos="fade-left" className="text-[24px] md:text-[28px] font-semibold text-white mb-4">
@@ -64,7 +63,7 @@ const Banner = () => {
             </div>
 
             {/* Image Section */}
-            <div className="w-48 md:w-80 flex-shrink-0 mt-8 md:mt-0 profile-container">
+            <div className="w-48 md:w-80 flex-shrink-0 mt-20 md:mt-0 profile-container">
                 <img
                     src={mizanurPic}
                     alt="Mizanur Malita"
