@@ -1,53 +1,62 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import mizanurPic from "../assets/mizanur.jpg";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const Banner = () => {
+    useEffect(() => {
+    Aos.init({ duration: 1000, easing: "ease-in-out" });
+     once: true;  
+  }, []);
     return (
-        <div className="roboto-serif-font flex flex-col md:flex-row items-center gap-10 md:gap-55
+        <div className="roboto-serif-font flex flex-col-reverse md:flex-row items-center gap-10 md:gap-55
          py-12 md:py-24 md:px-2">
-            
+
             {/* Text Section */}
-            <div className="text-center md:text-left max-w-lg">
-                <h3 className="text-[20px] font-medium text-white mb-2">Hello, It's Me</h3>
-                <h1 className="text-3xl md:text-[52px] font-bold text-white mb-2">
+            <div data-aos="fade-down-right" className="text-center md:text-left max-w-lg">
+                <h3 data-aos="flip-up" className="text-[20px] font-medium text-white mb-2">
+                    Hello, It's Me
+                </h3>
+
+                <h1 data-aos="fade-right" className="text-3xl md:text-[52px] font-bold text-white mb-2">
                     Mizanur Malita
                 </h1>
-                <h3 className="text-[24px] md:text-[28px] font-semibold text-white mb-4">
+
+                <h3 data-aos="fade-left" className="text-[24px] md:text-[28px] font-semibold text-white mb-4">
                     And I'm a{" "}
                     <TypeAnimation
                         sequence={[
-                            "Frontend Developer", 2000, // ২ সেকেন্ড থাকবে
+                            "Frontend Developer", 2000,
                             "React Developer", 2000,
                             "MERN Stack Learner", 2000,
                         ]}
-                        speed={50} // টাইপিং স্পিড
-                        repeat={Infinity} // লুপ করবে
+                        speed={50}
+                        repeat={Infinity}
                         className="text-[#0ef]"
                     />
                 </h3>
-                <p className="text-white mb-6 md:text-xl max-w-md md:max-w-[500px]">
+                <p data-aos="zoom-in" className="text-white mb-6 md:text-xl max-w-md md:max-w-[500px]">
                     I'm a passionate Frontend Developer focused on building responsive
                     and user-friendly websites using React, Tailwind CSS, and modern web technologies.
                 </p>
-
-                {/* Social Icons */}
-                <div className="flex justify-center md:justify-start gap-3 mb-6">
+                {/* icon */}
+                <div data-aos="fade-up" className="flex justify-center md:justify-start gap-3 mb-6">
                     <div className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
                      rounded-full btn-box-hover hover:text-white transition">
                         <FaFacebookF size={18} />
                     </div>
                     <div className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
-                     rounded-full btn-box-hover hover:text-white transition">
+                  rounded-full btn-box-hover hover:text-white transition">
                         <FaGithub size={18} />
                     </div>
                     <div className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
-                     rounded-full btn-box-hover hover:text-white transition">
+                    rounded-full btn-box-hover hover:text-white transition">
                         <FaLinkedinIn size={18} />
                     </div>
                     <div className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
-                     rounded-full btn-box-hover hover:text-white transition">
+                  rounded-full btn-box-hover hover:text-white transition">
                         <FaWhatsapp size={18} />
                     </div>
                 </div>
