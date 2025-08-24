@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className="roboto-serif-font">
-      <header className="w-full fixed z-20 top-0 left-0 bg-[#001c3f] shadow-md opacity-90">
+      <header className="w-full  z-20 top-0 left-0 bg-[#001c3f] shadow-md opacity-90">
         {/* Navbar */}
         <nav className="w-11/12 mx-auto flex justify-between items-center py-4 md:py-4 md:px-2">
           {/* Logo */}
