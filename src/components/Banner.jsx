@@ -70,7 +70,7 @@ const Banner = () => {
                         <FaLinkedinIn size={18} />
                     </a>
                     <a
-                        href="https://wa.me/01950719346" 
+                        href="https://wa.me/01950719346"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]

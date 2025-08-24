@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
-import { FaUser } from "react-icons/fa";
+import { FaCode, FaServicestack, FaUser } from "react-icons/fa";
 import { IoHomeOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import Aos from "aos";
@@ -15,8 +15,8 @@ const Navbar = () => {
   const navLinks = [
     { name: "home", to: "/home", icon: <IoHomeOutline size={20} /> },
     { name: "about", to: "#about", icon: <FaUser size={18} /> },
-    { name: "service", to: "/service" },
-    { name: "pricing", to: "/pricing" },
+    { name: "skills", to: "/skills", icon: <FaCode size={18} /> },
+    { name: "service", to: "/service", icon: <FaServicestack size={18} /> }
   ];
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className="roboto-serif-font">
-      <header className="w-full  z-20 top-0 left-0 bg-[#001c3f] shadow-md opacity-90">
+      <header className="w-full fixed z-20 top-0 left-0 bg-[#001c3f] shadow-md opacity-90">
         {/* Navbar */}
         <nav className="w-11/12 mx-auto flex justify-between items-center py-4 md:py-4 md:px-2">
           {/* Logo */}
