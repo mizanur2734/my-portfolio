@@ -20,7 +20,7 @@ const Banner = () => {
                 </h3>
 
                 <h1 data-aos="fade-right" className="text-3xl md:text-[52px] font-bold text-white mb-2">
-                    Mizanur Malita 
+                    Mizanur Malita
                 </h1>
 
                 <h3 data-aos="fade-left" className="text-[24px] md:text-[28px] font-semibold text-white mb-4">
@@ -42,22 +42,42 @@ const Banner = () => {
                 </p>
                 {/* icon */}
                 <div data-aos="fade-up" className="flex justify-center md:justify-start gap-3 mb-6">
-                    <div className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
-                     rounded-full btn-box-hover hover:text-white transition">
+                    <a
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
+                        rounded-full btn-box-hover hover:text-white transition"
+                    >
                         <FaFacebookF size={18} />
-                    </div>
-                    <div className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
-                  rounded-full btn-box-hover hover:text-white transition">
+                    </a>
+                    <a
+                        href="https://github.com/mizanur2734"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
+                        rounded-full btn-box-hover hover:text-white transition"
+                    >
                         <FaGithub size={18} />
-                    </div>
-                    <div className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
-                    rounded-full btn-box-hover hover:text-white transition">
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/md-mizamur-malita-8b9463380/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
+                        rounded-full btn-box-hover hover:text-white transition"
+                    >
                         <FaLinkedinIn size={18} />
-                    </div>
-                    <div className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
-                  rounded-full btn-box-hover hover:text-white transition">
+                    </a>
+                    <a
+                        href="https://wa.me/01950719346" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
+                        rounded-full btn-box-hover hover:text-white transition"
+                    >
                         <FaWhatsapp size={18} />
-                    </div>
+                    </a>
                 </div>
                 <button className='btn-box-hover px-4 py-2 bg-[#0ef] rounded-4xl text-black'>More About Me</button>
             </div>

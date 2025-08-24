@@ -34,7 +34,7 @@ const Navbar = () => {
             data-aos="fade-down"
             data-aos-delay="100"
           >
-            <h3 className="text-2xl md:text-[30px] font-semibold text-white leading-none">
+            <h3 className="text-2xl md:text-[28px] font-semibold text-white leading-none">
               Mizanur
             </h3>
             {/* Animated Colorful Dot */}
@@ -65,7 +65,8 @@ const Navbar = () => {
               <a
                 key={link.to}
                 href={link.to}
-                className="text-xl font-semibold hover:text-[#0ef] flex items-center gap-2 hover:underline transition-all"
+                className="text-xl font-semibold hover:text-[#0ef] flex items-center gap-2 
+                hover:underline transition-all"
                 data-aos="fade-up"
                 data-aos-delay={200 + index * 100}
               >
