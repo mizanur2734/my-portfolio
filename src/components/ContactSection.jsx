@@ -1,4 +1,6 @@
 // src/components/ContactSection.jsx
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
     FaFacebookF,
     FaLinkedinIn,
@@ -9,10 +11,30 @@ import {
 } from "react-icons/fa";
 
 const ContactSection = () => {
-    return (
-        <section className="roboto-serif-font text-white mt-22 px-4" id="contact">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+    const form = useRef();
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm("service_agw4ffq", "template_kbi14w3", form.current, {
+                publicKey: "0bJz6MwEw3UXLHPlT",
+            })
+            .then(
+                () => {
+                    alert("✅ Message sent successfully!");
+                    form.current.reset();
+                },
+                (error) => {
+                    alert("❌ Failed to send message. Please try again!");
+                    console.log(error.text);
+                }
+            );
+    };
+
+    return (
+        <section className="roboto-serif-font text-white py-24 px-4" id="contact">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
                 {/* Left: Info */}
                 <div>
                     <div className="text-center mb-4">
@@ -21,9 +43,13 @@ const ContactSection = () => {
                         </h2>
                     </div>
 
-                    <p className="font-semibold text-gray-300 mb-3 text-2xl">Let's Work Together</p>
+                    <p className="font-semibold text-gray-300 mb-3 text-2xl">
+                        Let's Work Together
+                    </p>
                     <p className="text-gray-400 mb-6 text-xl">
-                        I am always interested in discussing new projects, creative ideas, or opportunities to be part of your dreams. Feel free to reach out anytime!
+                        I am always interested in discussing new projects, creative ideas,
+                        or opportunities to be part of your dreams. Feel free to reach out
+                        anytime!
                     </p>
 
                     {/* Email & Phone */}
@@ -39,7 +65,10 @@ const ContactSection = () => {
                     </div>
 
                     {/* Social Icons */}
-                    <div data-aos="fade-up" className="flex justify-start md:justify-start gap-3 mb-6">
+                    <div
+                        data-aos="fade-up"
+                        className="flex justify-start md:justify-start gap-3 mb-6"
+                    >
                         <a
                             href="https://www.facebook.com/"
                             target="_blank"
@@ -76,33 +105,40 @@ const ContactSection = () => {
                 </div>
 
                 {/* Right: Form */}
-                <form className="space-y-4 w-full">
+                <form ref={form} onSubmit={sendEmail} className="space-y-4 w-full">
                     <input
                         type="text"
+                        name="user_name"
                         placeholder="Your Name"
                         className="w-full bg-gray-800 p-3 rounded-md text-white focus:outline-none focus:ring-2 ring-cyan-400"
+                        required
                     />
                     <input
                         type="email"
+                        name="user_email"
                         placeholder="Your Email"
                         className="w-full bg-gray-800 p-3 rounded-md text-white focus:outline-none focus:ring-2 ring-cyan-400"
+                        required
                     />
                     <input
                         type="text"
+                        name="subject"
                         placeholder="Your Subject"
                         className="w-full bg-gray-800 p-3 rounded-md text-white focus:outline-none focus:ring-2 ring-cyan-400"
                     />
                     <textarea
                         rows="4"
+                        name="message"
                         placeholder="Your Message"
                         className="w-full bg-gray-800 p-3 rounded-md text-white focus:outline-none focus:ring-2 ring-cyan-400"
+                        required
                     ></textarea>
 
                     {/* Glowing Submit Button */}
                     <button
                         type="submit"
                         className="btn-box-hover w-full py-3 bg-[#0ef] text-black font-semibold rounded-md shadow-md
-                         hover:bg-cyan-300 transition-all duration-300"
+        hover:bg-cyan-300 transition-all duration-300"
                     >
                         Submit
                     </button>

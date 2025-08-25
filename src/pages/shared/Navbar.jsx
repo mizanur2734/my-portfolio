@@ -18,7 +18,7 @@ const Navbar = () => {
     { name: "about", to: "#about", icon: <FaUser size={18} /> },
     { name: "skills", to: "#skills", icon: <FaCode size={18} /> },
     { name: "service", to: "#service", icon: <FaServicestack size={18} /> },
-    { name: "contact", to: "#contact", icon: <CiMail size={20} /> }
+    { name: "contact", to: "#contact", icon: <CiMail size={20} /> },
   ];
 
   useEffect(() => {
@@ -46,17 +46,17 @@ const Navbar = () => {
               animate={{
                 scale: [1, 1.3, 1],
                 backgroundColor: [
-                  "#0ef",    // cyan
+                  "#0ef", // cyan
                   "#ff5733", // orange-red
-                  "#ff0",    // yellow
+                  "#ff0", // yellow
                   "#00ff88", // green
-                  "#0ef"     // back to cyan
-                ]
+                  "#0ef", // back to cyan
+                ],
               }}
               transition={{
                 repeat: Infinity,
                 duration: 3,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
             />
           </div>
@@ -113,15 +113,17 @@ const Navbar = () => {
 
         {/* Mobile Dropdown Menu */}
         <div
-          className={`md:hidden flex flex-col gap-4 px-4 md:px-12 py-4 transition-all ${menuOpen ? "block" : "hidden"
-            } bg-[#001f3fc4] text-white`}
+          className={`md:hidden flex flex-col gap-4 px-4 md:px-12 py-4 transition-all ${
+            menuOpen ? "block" : "hidden"
+          } bg-[#001f3fc4] text-white`}
         >
           {navLinks.map((link, index) => (
             <a
               key={link.to}
               href={link.to}
               onClick={() => setMenuOpen(false)}
-              className="capitalize text-lg font-semibold hover:text-[#ffa600] hover:underline underline-offset-4 flex items-center gap-2 transition-all"
+              className="capitalize text-lg font-semibold hover:text-[#ffa600]
+               hover:underline underline-offset-4 flex items-center gap-2 transition-all"
               data-aos="fade-up"
               data-aos-delay={100 + index * 100}
             >
