@@ -39,7 +39,7 @@ const ContactSection = () => {
                     </div>
 
                     {/* Social Icons */}
-                    <div data-aos="fade-up" className="flex justify-center md:justify-start gap-3 mb-6">
+                    <div data-aos="fade-up" className="flex justify-start md:justify-start gap-3 mb-6">
                         <a
                             href="https://www.facebook.com/"
                             target="_blank"
@@ -79,22 +79,22 @@ const ContactSection = () => {
                 <form className="space-y-4 w-full">
                     <input
                         type="text"
-                        placeholder="Enter Your Name"
+                        placeholder="Your Name"
                         className="w-full bg-gray-800 p-3 rounded-md text-white focus:outline-none focus:ring-2 ring-cyan-400"
                     />
                     <input
                         type="email"
-                        placeholder="Enter Your Email"
+                        placeholder="Your Email"
                         className="w-full bg-gray-800 p-3 rounded-md text-white focus:outline-none focus:ring-2 ring-cyan-400"
                     />
                     <input
                         type="text"
-                        placeholder="Enter Your Subject"
+                        placeholder="Your Subject"
                         className="w-full bg-gray-800 p-3 rounded-md text-white focus:outline-none focus:ring-2 ring-cyan-400"
                     />
                     <textarea
                         rows="4"
-                        placeholder="Enter Your Message"
+                        placeholder="Your Message"
                         className="w-full bg-gray-800 p-3 rounded-md text-white focus:outline-none focus:ring-2 ring-cyan-400"
                     ></textarea>
 

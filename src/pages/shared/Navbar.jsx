@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { CiMenuFries } from "react-icons/ci";
+import { CiMail, CiMenuFries } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
 import { FaCode, FaServicestack, FaUser } from "react-icons/fa";
 import { IoHomeOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,8 @@ const Navbar = () => {
     { name: "home", to: "/", icon: <IoHomeOutline size={20} /> },
     { name: "about", to: "#about", icon: <FaUser size={18} /> },
     { name: "skills", to: "#skills", icon: <FaCode size={18} /> },
-    { name: "service", to: "#service", icon: <FaServicestack size={18} /> }
+    { name: "service", to: "#service", icon: <FaServicestack size={18} /> },
+    { name: "contact", to: "#contact", icon: <CiMail size={20} /> }
   ];
 
   useEffect(() => {
@@ -81,9 +83,15 @@ const Navbar = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <button className="bg-gray-800 text-white px-5 py-2 rounded-full hidden md:block text-base font-semibold hover:bg-gray-700">
-              Sign In
-            </button>
+            <a
+              href="/resume.pdf"
+              download="Mizanur_Resume.pdf"
+              className="hidden md:inline-flex relative items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+            >
+              <span className="relative flex items-center gap-[6px] px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                <MdOutlineFileDownload size={22} /> Resume
+              </span>
+            </a>
 
             <div className="md:hidden">
               {menuOpen ? (
