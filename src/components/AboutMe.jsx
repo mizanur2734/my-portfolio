@@ -3,7 +3,7 @@ import mizanurPic from "../assets/mizanur.jpg";
 
 const AboutMe = () => {
     return (
-        <div className="roboto-serif-font min-h-screen flex flex-col-reverse md:flex-row items-center gap-10 md:gap-55
+        <div id='about' className="roboto-serif-font min-h-screen flex flex-col-reverse md:flex-row items-center gap-10 md:gap-55
            py-12">
 
             {/* Image Section */}

@@ -19,7 +19,7 @@
 
 @layer utilities {
   .btn-box-hover:hover {
-    box-shadow: 
+    box-shadow:
       0 0 5px #00FFFF,
       0 0 25px #00FFFF,
       0 0 50px #00FFFF,
@@ -49,15 +49,17 @@
   0% {
     box-shadow: 0 0 20px #00f0ff, 0 0 40px #ff00f0, 0 0 60px #00f0ff;
   }
+
   50% {
     box-shadow: 0 0 40px #ff00f0, 0 0 60px #00f0ff, 0 0 80px #ff00f0;
   }
+
   100% {
     box-shadow: 0 0 20px #00f0ff, 0 0 40px #ff00f0, 0 0 60px #00f0ff;
   }
 }
 
 
-#html{
-   scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }

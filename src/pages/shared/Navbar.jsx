@@ -13,10 +13,10 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const navLinks = [
-    { name: "home", to: "/home", icon: <IoHomeOutline size={20} /> },
+    { name: "home", to: "/", icon: <IoHomeOutline size={20} /> },
     { name: "about", to: "#about", icon: <FaUser size={18} /> },
-    { name: "skills", to: "/skills", icon: <FaCode size={18} /> },
-    { name: "service", to: "/service", icon: <FaServicestack size={18} /> }
+    { name: "skills", to: "#skills", icon: <FaCode size={18} /> },
+    { name: "service", to: "#service", icon: <FaServicestack size={18} /> }
   ];
 
   useEffect(() => {
