@@ -4,35 +4,38 @@ const projects = [
   {
     id: 1,
     title: "E-commerce Website",
-    image: "https://via.placeholder.com/400x250",
+    image: "/src/assets/photo1.png",
     description:
       "A full-stack e-commerce website with React, Node.js, and MongoDB.",
-    link: "https://your-ecommerce-link.com",
-    github: "https://github.com/yourusername/ecommerce-project",
+    link: " https://remarkable-chaja-6bb3d3.netlify.app",
+    github:
+      "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-mizanur2734",
   },
   {
     id: 2,
     title: "Portfolio Website",
-    image: "https://via.placeholder.com/400x250",
+    image: "/src/assets/photo2.png",
     description:
       "A personal portfolio website built with React and Tailwind CSS.",
-    link: "https://your-portfolio.com",
-    github: "https://github.com/yourusername/portfolio",
+    link: " https://historical-artifacts-tra-20193.web.app",
+    github:
+      " https://github.com/Programming-Hero-Web-Course4/b11a11-client-side-mizanur2734",
   },
   {
     id: 3,
     title: "Blog Platform",
-    image: "https://via.placeholder.com/400x250",
+    image: "/src/assets/photo3.png",
     description: "A blog platform with authentication and CRUD features.",
-    link: "https://your-blog-link.com",
-    github: "https://github.com/yourusername/blog-platform",
+    link: "https://assignment-12-client-sid-f4bdb.web.app",
+    github:
+      "https://github.com/Programming-Hero-Web-Course4/b11a12-client-side-mizanur2734",
   },
 ];
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 text-white">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="mt-22 text-white">
+      <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center">
           My <span className="text-[#0ef]">Projects</span>
         </h2>
@@ -40,7 +43,9 @@ const ProjectsSection = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform"
+              className="flex flex-col items-center justify-center gap-2 
+                bg-gray-800 rounded-2xl shadow-lg overflow-hidden 
+                  hover:scale-105 transition-transform duration-300 border border-gray-600"
             >
               <img
                 src={project.image}
@@ -55,7 +60,7 @@ const ProjectsSection = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                    className="flex btn-box-hover px-4 py-2 bg-[#0ef] rounded-lg text-black"
                   >
                     Live
                   </a>

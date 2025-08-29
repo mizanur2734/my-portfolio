@@ -18,6 +18,7 @@ const Navbar = () => {
     { name: "about", to: "#about", icon: <FaUser size={18} /> },
     { name: "skills", to: "#skills", icon: <FaCode size={18} /> },
     { name: "service", to: "#service", icon: <FaServicestack size={18} /> },
+    { name: "projects", to: "#projects", icon: <FaServicestack size={18} /> },
     { name: "contact", to: "#contact", icon: <CiMail size={20} /> },
   ];
 
@@ -62,7 +63,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-10 items-center">
+          <div className="hidden md:flex gap-8 items-center">
             {navLinks.map((link, index) => (
               <a
                 key={link.to}
