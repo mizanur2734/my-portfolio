@@ -11,7 +11,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { MdOutlineFileDownload } from "react-icons/md";
 
-const Banner = () => {
+const BannerSection = () => {
   useEffect(() => {
     Aos.init({ duration: 1000, easing: "ease-in-out" });
     once: true;
@@ -135,4 +135,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BannerSection;

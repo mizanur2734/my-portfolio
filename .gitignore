@@ -7,6 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# live link
+https://dazzling-pithivier-2db8f7.netlify.app/
+
 node_modules
 dist
 dist-ssr
