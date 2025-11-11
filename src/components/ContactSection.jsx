@@ -140,7 +140,7 @@ const ContactSection = () => {
           {/* Glowing Submit Button */}
           <button
             type="submit"
-            className="btn-box-hover w-full py-3 bg-[#0ef] text-black font-semibold rounded-md shadow-md
+            className="box-hover w-full py-3 bg-[#0ef] text-black font-semibold rounded-md shadow-md
         hover:bg-cyan-300 transition-all duration-300"
           >
             Submit

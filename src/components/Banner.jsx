@@ -88,7 +88,7 @@ const Banner = () => {
             <FaGithub size={18} />
           </a>
           <a
-            href="https://www.linkedin.com/in/md-mizamur-malita-8b9463380/"
+            href="https://www.linkedin.com/in/md-mizanur-malita-546496382/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef]
@@ -116,7 +116,7 @@ const Banner = () => {
           className="md:hidden relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
         >
           <span className="relative flex items-center gap-[6px] px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-            <MdOutlineFileDownload size={22} /> Resume
+            <MdOutlineFileDownload size={22} /> CV
           </span>
         </a>
 

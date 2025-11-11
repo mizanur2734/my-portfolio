@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-[#011627]">
       <div className="bg-[#0102274f] py-4">
-        <h3 className="text-center">
+        <h3 className="text-center text-white">
           <i>@2025 Mizanur Malita. All rights reserved.</i>
         </h3>
       </div>

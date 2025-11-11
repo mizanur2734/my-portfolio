@@ -18,7 +18,7 @@ const AboutMe = () => {
 
       {/* Text Section */}
       <div data-aos="fade-down-right" className="text-left mt-20 md:mt-0">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-2">
+        <h2 className="text-3xl text-white md:text-4xl font-semibold mb-2">
           About <span className="text-[#0ef]">Me</span>
         </h2>
         <h3 className="text-xl md:text-2xl font-semibold mb-2">

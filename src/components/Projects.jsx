@@ -6,10 +6,10 @@ const projects = [
     title: "E-commerce Website",
     image: "/src/assets/photo1.png",
     description:
-      "A full-stack e-commerce website with React, Node.js, and MongoDB.",
-    link: " https://remarkable-chaja-6bb3d3.netlify.app",
+      "E-commerce site with full CRUD (React, Node.js, MongoDB)",
+    link: "https://mellow-klepon-9731bb.netlify.app",
     github:
-      "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-mizanur2734",
+      "https://github.com/mizanur2734/coffee-king-online-store-client",
   },
   {
     id: 2,
@@ -17,18 +17,17 @@ const projects = [
     image: "/src/assets/photo2.png",
     description:
       "A personal portfolio website built with React and Tailwind CSS.",
-    link: " https://historical-artifacts-tra-20193.web.app",
-    github:
-      " https://github.com/Programming-Hero-Web-Course4/b11a11-client-side-mizanur2734",
+    link: "https://binary-fusion.vercel.app/",
+    github: "https://github.com/mizanur2734/binary-fusion",
   },
   {
     id: 3,
     title: "Blog Platform",
     image: "/src/assets/photo3.png",
-    description: "A blog platform with authentication and CRUD features.",
-    link: "https://assignment-12-client-sid-f4bdb.web.app",
+    description: "A blog platform website built using React and Tailwind CSS.",
+    link: "https://our-best-doctors.vercel.app/",
     github:
-      "https://github.com/Programming-Hero-Web-Course4/b11a12-client-side-mizanur2734",
+      "https://github.com/mizanur2734/Our-Best-Doctors-",
   },
 ];
 

@@ -7,6 +7,7 @@ import {
   SiTailwindcss,
   SiFirebase,
   SiNodedotjs,
+  SiNextdotjs,
 } from "react-icons/si";
 import { MdAnimation } from "react-icons/md";
 import {
@@ -37,15 +38,18 @@ const Skills = () => {
         My <span className="text-[#0ef]">Skills</span>
       </h2>
 
-      {/* প্রথম লাইন: 10 কার্ড */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 max-w-6xl mx-auto md:px-6 mb-6">
+        <SkillCard
+          icon={<SiReact className="text-blue-400" />}
+          name="React.Js"
+        />
         <SkillCard
           icon={<SiJavascript className="text-yellow-400" />}
           name="JavaScript"
         />
         <SkillCard
-          icon={<SiReact className="text-blue-400" />}
-          name="React.Js"
+          icon={<SiNextdotjs className="text-black dark:text-white text-3xl" />}
+          name="Next.js"
         />
         <SkillCard
           icon={<SiNodedotjs className="text-green-500" />}
@@ -73,10 +77,6 @@ const Skills = () => {
         />
         <SkillCard icon={<FaFigma className="text-pink-400" />} name="Figma" />
         <SkillCard icon={<FaHtml5 className="text-orange-500" />} name="HTML" />
-      </div>
-
-      {/* শেষ ৩ টা কার্ড আলাদা গ্রিডে কেন্দ্র করে রাখা */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto md:px-20">
         <div className="w-full">
           <SkillCard
             icon={<FaCss3Alt className="text-blue-500" />}

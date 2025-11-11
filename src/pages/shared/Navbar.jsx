@@ -68,7 +68,7 @@ const Navbar = () => {
               <a
                 key={link.to}
                 href={link.to}
-                className="text-xl font-semibold hover:text-[#0ef] flex items-center gap-2 
+                className="text-xl font-semibold hover:text-[#0ef] text-white flex items-center gap-2 
                 hover:underline transition-all"
                 data-aos="fade-up"
                 data-aos-delay={200 + index * 100}
@@ -85,12 +85,18 @@ const Navbar = () => {
             data-aos-delay="500"
           >
             <a
-              href="/resume.pdf"
-              download="Mizanur_Resume.pdf"
-              className="hidden md:inline-flex relative items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+              href="file:///C:/Users/MIZANUR/AppData/Local/Microsoft/Windows/INetCache/IE/DJTVMVL8/Mizanur_CV[1].pdf"
+              download=""
+              className="hidden md:inline-flex relative items-center justify-center p-0.5 mb-2
+               me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br
+                from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500
+                 hover:text-white dark:text-white"
             >
-              <span className="relative flex items-center gap-[6px] px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-                <MdOutlineFileDownload size={22} /> Resume
+              <span
+                className="relative flex items-center gap-[6px] px-4 py-2 transition-all ease-in duration-75
+               bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent"
+              >
+                <MdOutlineFileDownload size={22} /> CV
               </span>
             </a>
 
