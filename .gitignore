@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # live link
-https://dazzling-pithivier-2db8f7.netlify.app/
+https://my-portfolio-insto7m4c-mizanur2734s-projects.vercel.app/
 
 node_modules
 dist
@@ -25,3 +25,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.vercel

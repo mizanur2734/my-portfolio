@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div
       id="service"
-      className="min-h-screen text-white flex flex-col items-center justify-center mt-0 md:mt-2"
+      className="min-h-screen text-white flex flex-col items-center justify-center mt-0"
     >
       <h2 className="text-4xl font-bold mb-12">
         My <span className="text-[#0ef]">Services</span>
