@@ -85,7 +85,7 @@ const Navbar = () => {
             data-aos-delay="500"
           >
             <a
-              href="file:///C:/Users/MIZANUR/AppData/Local/Microsoft/Windows/INetCache/IE/DJTVMVL8/Mizanur_CV[1].pdf"
+              href="/Resume of MD Mizanur Malita - Wed Designer.pdf"
               download=""
               className="hidden md:inline-flex relative items-center justify-center p-0.5 mb-2
                me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br
