@@ -5,7 +5,7 @@ const projects = [
     title: "E-commerce Website",
     image: "https://i.postimg.cc/fbYGtZpK/photo1.png",
     description: "E-commerce site with full CRUD (React, Node.js, MongoDB)",
-    link: "https://mellow-klepon-9731bb.netlify.app",
+    link: "https://remarkable-chaja-6bb3d3.netlify.app",
     server: "https://github.com/mizanur2734/coffee-king-online-store-server",
     github: "https://github.com/mizanur2734/coffee-king-online-store-client",
   },

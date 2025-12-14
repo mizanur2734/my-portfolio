@@ -96,7 +96,7 @@ const Navbar = () => {
                 className="relative flex items-center gap-[6px] px-4 py-2 transition-all ease-in duration-75
                bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent"
               >
-                <MdOutlineFileDownload size={22} /> CV
+                <MdOutlineFileDownload size={22} /> resume
               </span>
             </a>
 

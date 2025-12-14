@@ -89,7 +89,7 @@ const ContactSection = () => {
               <FaGithub size={18} />
             </a>
             <a
-              href="https://www.linkedin.com/in/md-mizamur-malita-8b9463380/"
+              href="https://www.linkedin.com/in/md-mizanur-malita-546496382/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center border-2 text-[#0ef] border-[#0ef] rounded-full btn-box-hover hover:text-white transition"

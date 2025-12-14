@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import mizanurPic from "../assets/mizanur.jpg";
+import mizanurPic from "../assets/mizanur.png";
 import {
   FaFacebookF,
   FaGithub,
@@ -18,13 +18,13 @@ const BannerSection = () => {
   }, []);
   return (
     <div
-      className="roboto-serif-font min-h-screen flex flex-col-reverse md:flex-row items-center gap-10 md:gap-55
+      className="roboto-serif-font min-h-screen flex flex-col-reverse md:flex-row items-center  gap-10 md:gap-72
            py-12 md:mt-22"
     >
       {/* Text Section */}
       <div
         data-aos="fade-down-right"
-        className="text-left max-w-lg mt-10 md:my-25"
+        className="text-left max-w-2xl mt-10 md:my-25"
       >
         <h3
           data-aos="flip-up"
@@ -116,7 +116,7 @@ const BannerSection = () => {
           className="md:hidden relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
         >
           <span className="relative flex items-center gap-[6px] px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-            <MdOutlineFileDownload size={22} /> CV
+            <MdOutlineFileDownload size={22} /> resume
           </span>
         </a>
 
@@ -124,7 +124,7 @@ const BannerSection = () => {
       </div>
 
       {/* Image Section */}
-      <div className="w-48 md:w-80 flex-shrink-0 mt-20 md:mt-0 profile-container">
+      <div className="w-48 md:w-100 flex-shrink-0 mt-20 md:mt-0 profile-container">
         <img
           src={mizanurPic}
           alt="Mizanur Malita"

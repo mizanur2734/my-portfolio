@@ -1,5 +1,5 @@
 import React from "react";
-import mizanurPic from "../assets/mizanur.jpg";
+import mizanurPic from "../assets/mizanur.png";
 
 const AboutMe = () => {
   return (
@@ -8,7 +8,7 @@ const AboutMe = () => {
       className="roboto-serif-font min-h-screen flex-row  md:flex items-center gap-10 md:gap-55"
     >
       {/* Image Section */}
-      <div className="w-48 md:w-80 flex-shrink-0 mt-20 md:mt-0 profile-container mx-auto justify-center">
+      <div className="w-48 md:w-100 flex-shrink-0 mt-20 md:mt-0 profile-container mx-auto justify-center">
         <img
           src={mizanurPic}
           alt="Mizanur Malita"
